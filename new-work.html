@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能平台</title>
+    
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+    
+    <!-- 引入字体样式 -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <!-- 引入时间选择器 -->
+
+    <link rel="stylesheet" href="./styles/bootstrap-datepicker.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>平安智能营销平台</span>
+        </div>
+        <div class="user clearfix">
+            <i class="user-icon"></i>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" class="dropdown-tog">
+                        <span></span>
+                        平安
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                </li>        
+                <ul class="dropdown-list">
+                    <li>
+                        <a href="#">个人设置</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">退出登录</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <div class="mask"></div>
+    <aside class="main-side">
+        <section class="side-bar">
+            <ul class="side-menu">
+                <!-- 主体 -->
+                <li class="side-treeview">
+                    <a href="#" class="side-treeview-title">
+                        <img src="./images/up-icon.png" alt="收起菜单">
+                        <span>收起菜单</span>
+                    </a>
+                    <ul class="side-treeview-menu">
+                        <li class="side-treeview treeview-menu-title">
+                            <a href="#">
+                                <img src="./images/celue-icon.png" alt="智能策略"> 智能策略
+                                <span class="pull-right-container">
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="side-treeview-menu">
+                                <li class="side-treeview treeview-menu-list">
+                                    <a href="model-list.html" class="pd14">
+                                        模型列表
+                                    </a>
+                                </li>
+                                <li class="side-treeview treeview-menu-list active">
+                                    <a href="new-work.html" class="pd14">
+                                        新建任务
+                                    </a>
+                                </li>
+                                <li class="side-treeview treeview-menu-list ">
+                                    <a href="history.html" class="pd14">
+                                        历史任务
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </li>
+                        <li class="tside-treeview treeview-menu-title">
+                            <a href="#">
+                                <img src="./images/table-icon.png" alt="智能策略"> 报表品台
+                                <span class="pull-right-container">
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="side-treeview-menu">
+                                <li class="treeview treeview-menu-list">
+                                    <a href="chart-list.html" class="pd14">
+                                        报表列表
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <p>首页</p>
+        <section class="content-header clearfix">
+            <h2>
+                <span>新建任务</span>
+                <div class="content-header-search fr">
+                    <input type="text" placeholder="关键词检索">
+                    <button></button>
+                </div>
+            </h2>    
+        </section>
+        <section class="content">
+            <div class="row new-work">
+                <div class="col-md-12">
+                    <form action="#" method="post" class="form-horizontal">
+                        <div class="form-title clearfix">
+                            <div class="form-group clearfix">
+                                <label class="col-sm-1 control-label" for="mood-name">模型名称</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control" id="mood-name">
+                                        <option>沉默用户激活</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            
+                                <label class="col-sm-1 control-label" for="create-time">创建时间</label>
+                                <div class="col-md-2">
+                                    <p class="form-control-static" id="create-time">2018-09-19</p>
+                                </div>
+                                
+                                <label class="col-sm-1 control-label" for="work-name">任务名称</label>
+                                <div class="col-md-5">
+                                    <input type="email" class="form-control" id="work-name" placeholder="2018-09-19">
+                                </div>                                
+                            </div>
+
+                            <ul class="form-line2 clearfix">
+                                <li>
+                                    <label class="" for="datepicker1">任务去重释时间</label>
+                                    <div class="time-select">
+                                        <input type="text" class="form-control datepicker" id="datepicker2" placeholder="请选择时间">
+                                    </div>
+                                    
+                               
+                                </li>
+                                <li>
+                                    <label class="" for="datepicker2">任务开始时间</label> 
+                                    <div class="time-select">
+                                        <input type="text" class="form-control datepicker" id="datepicker2" placeholder="请选择时间">
+                                    </div>                           
+                                </li>
+                            
+                                <li>
+                                    <label class="" for="chuli">重复处理策略</label>
+                                    <div class="select">
+                                        <select class="form-control" id="chuli">
+                                            <option>去除重名</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <label class="" for="pingci">任务产生频次</label>
+                                    <div class="select">
+                                        <select class="form-control" id="pingci">
+                                            <option>周更新</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>    
+                                </li>
+                       
+                            </ul>
+                        </div>
+                        <div class="form-body">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation" class="active">
+                                    <a href="#user-info" data-toggle="tab">用户信息</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#belong" data-toggle="tab">所属组织</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#select-product" data-toggle="tab">产品筛选</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <!-- 用户信息 -->
+                                <div role="tabpanel" class="tab-pane user-info active" id="user-info">
+                                    <div class="user-info-title form-grounp clearfix">
+                                        
+                                        <label class="control-label" for="head-rate">头部转换率</label>
+                                        
+                                        <div class="select">
+                                            <select class="form-control" id="head-rate">
+                                                <option>10%-20%</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="user-info-body clearfix">
+                                        <div class="user-info-body-left">
+                                            <div class="form-conpent clearfix">
+                                                <label class="control-label" for="user-tag">用户标签</label>
+                                                <div class="select">
+                                                    <select class="form-control user-tag-tog" id="user-tag">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                                <div class="user-tag">
+                                                    <h2> 用户标签</h2>
+                                                    <div class="tag-list clearfix">
+                                                        <label class="active">白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label>白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label>白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label class="active">白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label class="active">白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label>白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label>白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label>白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <label>白领小资
+                                                            <input type="checkbox" value="">
+                                                        </label>
+                                                        <div class="form-con">
+                                                            <input class="submit" type="button" value="确认">
+                                                            <input class="cancel" type="button" value="取消">
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-conpent clearfix">
+                                                <label class="control-label" for="annual-income">年收入</label>
+                                            
+                                                <div class="select">
+                                                    <select class="form-control" id="annual-income">
+                                                        <option>请选择</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-info-body-right">
+                                            <div class="form-conpent clearfix">
+                                                <label class="control-label" for="risk">风险偏好</label>
+                                                <div class="select">
+                                                    <select class="form-control" id="risk">
+                                                        <option>请选择</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-conpent clearfix select-sex">
+                                                <label class="control-label">性别</label>
+                                                <label class="sex active">男
+                                                    <input type="radio" name="sex" value="男">
+                                                </label>
+                                                <label class="sex">女
+                                                    <input type="radio" name="sex" value="女">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- 所属组织 -->
+                                <div role="tabpanel" class="tab-pane" id="belong">
+                                    <div class="belong-list clearfix">
+                                        <label class="col-sm-1 control-label" for="sub-bank">分行</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="sub-bank" name="sub" onchange="turn()">
+                                                <option value="请选择分行" selected="selected">请选择分行</option>
+                                                <option value="分行001">分行001</option>
+                                                <option value="分行002">分行002</option>
+                                                <option value="分行003">分行003</option>
+                                                <option value="分行004">分行004</option>
+                                                <option value="分行005">分行005</option>
+                                                <option value="分行006">分行006</option>
+                                                <option value="分行007">分行007</option>
+                                                <option value="分行008">分行008</option>
+                                                <option value="分行009">分行009</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="belong-list clearfix">
+                                        <label class="col-sm-1 control-label" for="branch-bank">支行</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="branch-bank" name="branch">
+                                                <option value="01" selected="selected">请选择支行</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="belong-list clearfix">
+                                        <label class="col-sm-1 control-label" for="main-hall">营业厅</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="main-hall" name="hall">
+                                                <option value="0" selected="selected">请选择营业厅</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 产品筛选 -->
+                                <div role="tabpanel" class="tab-pane select-pro" id="select-product">
+                                    <div class="form-group clearfix">
+                                        <label class="col-sm-2 control-label" for="pro-type">产品类型</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="pro-type">
+                                                <option>请选择</option>
+                                                <option>基金</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                        <label class="col-sm-2 control-label" for="pro-profit">产品收益</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="pro-profit">
+                                                <option>请选择</option>
+                                                <option>产品收益</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="col-sm-2 control-label" for="pro-start">产品起投</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="pro-start">
+                                                <option>请选择</option>
+                                                <option>4000</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                        <label class="col-sm-2 control-label" for="pro-end">产品期限</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="pro-end">
+                                                <option>请选择</option>
+                                                <option>随买随取</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <button type="submit" class="btn btn-default sign-in">确定</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.zh-CN.js"></script>  
+    <script src="js/echarts.min.js"></script>
+    <script src="js/chart.js"></script>
+    
+    
+    <script>
+        $('.datepicker').datepicker({
+
+            autoclose:
+                true,
+
+            todayHighlight:
+                true,
+
+            language: "zh-CN",
+
+            format: "yyyy-mm-dd"
+
+        }); 
+       
+
+    </script>
+</body>
+</html>

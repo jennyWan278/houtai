@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能平台登陆</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="logo">
+            <img src="./images/logo.png" alt="智能营销平台">
+        </div>
+        <div class="wrapper">
+            <div class="wrapper-header">
+                <a href="#">账户登录</a>
+            </div>
+            <form action="#" method="post" id="login">
+                <div class="wrapper-body">
+                    <input class="inp" name="username" type="text" placeholder="手机号/账户名/邮箱" minlength="2" required>
+                    <input class="pwd" type="password" name="password" placeholder="密码" minlength="5" required>
+                </div>
+                <div class="wrapper-footer">
+                    <input type="submit" value="登录">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/zh.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
+    <script>
+        $().ready(function () {
+            $("#login").validate();
+        });
+    </script>
+    
+</body>
+</html>

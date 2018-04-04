@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能平台</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+
+    <!-- 引入字体样式 -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <!-- 引入时间选择器 -->
+
+    <link rel="stylesheet" href="./styles/bootstrap-datepicker.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span>平安智能营销平台</span>
+        </div>
+        <div class="user clearfix">
+            <i class="user-icon"></i>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" class="dropdown-tog">
+                        <span></span>
+                        平安
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                </li>
+                <ul class="dropdown-list">
+                    <li>
+                        <a href="#">个人设置</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">退出登录</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <div class="mask"></div>
+    <aside class="main-side">
+        <section class="side-bar">
+            <ul class="side-menu">
+                <!-- 主体 -->
+                <li class="side-treeview">
+                    <a href="#" class="side-treeview-title">
+                        <img src="./images/up-icon.png" alt="收起菜单">
+                        <span>收起菜单</span>
+                    </a>
+                    <ul class="side-treeview-menu">
+                        <li class="side-treeview treeview-menu-title">
+                            <a href="#">
+                                <img src="./images/celue-icon.png" alt="智能策略"> 智能策略
+                                <span class="pull-right-container">
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="side-treeview-menu">
+                                <li class="side-treeview treeview-menu-list">
+                                    <a href="model-list.html" class="pd14">
+                                        模型列表
+                                    </a>
+                                </li>
+                                <li class="side-treeview treeview-menu-list">
+                                    <a href="new-work.html" class="pd14">
+                                        新建任务
+                                    </a>
+                                </li>
+                                <li class="side-treeview treeview-menu-list ">
+                                    <a href="history.html" class="pd14">
+                                        历史任务
+                                    </a>
+                                </li>
+                
+                            </ul>
+                        </li>
+                        <li class="tside-treeview treeview-menu-title">
+                            <a href="#">
+                                <img src="./images/table-icon.png" alt="智能策略"> 报表品台
+                                <span class="pull-right-container">
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="side-treeview-menu">
+                                <li class="treeview treeview-menu-list active">
+                                    <a href="chart-list.html" class="pd14">
+                                        报表列表
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <p>首页</p>
+        <section class="content-header clearfix">
+            <h2>
+                <span>报表列表</span>
+                <div class="content-header-search fr">
+                    <input type="text" placeholder="关键词检索">
+                    <button></button>
+                </div>
+            </h2>
+        </section>
+        <section class="content model">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="chart">
+                        <li>
+                            <div class="chart-list chart-tog">
+                                <!-- <div class="chart-tog"> -->
+                                    用户基础画像查询
+                                    <span>更新时间：2018-09-09</span>
+                                    <i class="fa fa-caret-right fa-2x"></i>
+                                <!-- </div> -->
+
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="chart-list chart-tog">
+                                <!-- <div class="chart-tog"> -->
+                                    用户-推荐金融产品匹配查询
+                                    <span>更新时间：2018-09-09</span>
+                                    <i class="fa fa-caret-right fa-2x open"></i>
+                                <!-- </div> -->
+                                
+                            </div>
+                            <div class="chart-info">
+                                <div class="chart-info-title">
+                                    <form action="">
+                                        <label for="base-info">产品基本信息</label>
+                                        <input type="text" placeholder="请输入关键字" id="base-info">
+                                        <label for="pro-key">产品关键字</label>
+                                        <input type="text" placeholder="汇金" id="pro-key">
+                                        <input type="button" value="查看" class="see">
+                                        <input type="button" value="导出">
+                                    </form>
+                                </div>
+                                <div class="chart-info-body clearfix">
+                                    <div class="chart-info-body-content mg">
+                                        <p>用户基础信息</p>
+                                        <ul class="nav nav-tabs">
+                                            <li role="presentation" class="active user-attr">
+                                                <a href="#user-attr" data-toggle="tab">用户属性</a>
+                                            </li>
+                                            <li role="presentation" class="riches-attr">
+                                                <a href="#riches-attr" data-toggle="tab">财富属性</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane clearfix active" id="user-attr">
+                                                <div class="user-base-left">
+                                                    <div class="sex-rate">
+                                                        <p>性别比例</p>
+                                                        <div class="sex-rate-men">
+                                                            <span class="rate"></span>
+                                                        </div>
+                                                        <div class="sex-rate-women">
+                                                            <span class="rate"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="users-tag"></div>
+                                                    <div class="up-rate"></div>
+                                                </div>
+                                                <div class="user-base-left">
+                                                    <div class="age-division"></div>
+                                                    <div class="active-division"></div>
+                                                    <div class="branch"></div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane clearfix" id="riches-attr">
+                                                <div class="riches-base-left">
+                                                    <div class="aum"></div>
+                                                    <div class="buy-time"></div>
+                                                </div>
+                                                <div class="riches-base-left">
+                                                    <div class="buy-rate"></div>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                    <div class="chart-info-body-content">
+                                        <div class="product-info-right"></div>
+                                        <div class="product-info-tab">
+                                            <label class="one-month">近一月
+                                                <input type="radio" name="time" value="近一月">
+                                            </label>
+                                            <label class="three-month">近三月
+                                                <input type="radio" name="time" value="近三月">
+                                            </label>
+                                            <label class="six-month">近六月
+                                                <input type="radio" name="time" value="近六月">
+                                            </label>
+                                            <label class="one-year active">近一年
+                                                <input type="radio" name="time" value="近一年">
+                                            </label>
+                                        </div>
+                                        <div class="chart-info-right-tag">
+                                            <h2>产品特征</h2>
+                                            <ul class="chart-info-right-list">
+                                                <li>
+                                                    <a href="#">随买随取</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">高收益</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">中产最爱</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">随买随取</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">高收益</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">中产最爱</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">中产最爱</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">随买随取</a>
+                                                </li>
+                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chart-list chart-tog">
+                                <!-- <div class="chart-tog"> -->
+                                    金融产品-推荐用户匹配群查询
+                                    <span>更新时间：2018-09-09</span>
+                                    <i class="fa fa-caret-right fa-2x"></i>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chart-list chart-tog">
+                                <!-- <div class="chart-tog"> -->
+                                    金融产品销售分析表
+                                    <span>更新时间：2018-09-09</span>
+                                    <i class="fa fa-caret-right fa-2x"></i>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.zh-CN.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script>
+        $('.datepicker').datepicker({
+
+            autoclose:
+                true,
+
+            todayHighlight:
+                true,
+
+            language: "zh-CN",
+
+            format: "yyyy-mm-dd"
+
+        });
+
+
+    </script>
+</body>
+
+</html>

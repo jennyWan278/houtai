@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智能平台</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+
+
+    <!-- 引入字体样式 -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+    <!-- 引入时间选择器 -->
+
+    <link rel="stylesheet" href="./styles/bootstrap-datepicker.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span>平安智能营销平台</span>
+        </div>
+        <div class="user clearfix">
+            <i class="user-icon"></i>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" class="dropdown-tog">
+                        <span></span>
+                        平安
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                </li>
+                <ul class="dropdown-list">
+                    <li>
+                        <a href="#">个人设置</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">退出登录</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <div class="mask"></div>
+    <aside class="main-side">
+        <section class="side-bar">
+            <ul class="side-menu">
+                <!-- 主体 -->
+                <li class="side-treeview">
+                    <a href="#" class="side-treeview-title">
+                        <img src="./images/up-icon.png" alt="收起菜单">
+                        <span>收起菜单</span>
+                    </a>
+                    <ul class="side-treeview-menu">
+                        <li class="side-treeview treeview-menu-title">
+                            <a href="#">
+                                <img src="./images/celue-icon.png" alt="智能策略"> 智能策略
+                                <span class="pull-right-container">
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="side-treeview-menu">
+                                <li class="side-treeview treeview-menu-list">
+                                    <a href="model-list.html" class="pd14">
+                                        模型列表
+                                    </a>
+                                </li>
+                                <li class="side-treeview treeview-menu-list">
+                                    <a href="new-work.html" class="pd14">
+                                        新建任务
+                                    </a>
+                                </li>
+                                <li class="side-treeview treeview-menu-list active">
+                                    <a href="history.html" class="pd14">
+                                        历史任务
+                                    </a>
+                                </li>
+                
+                            </ul>
+                        </li>
+                        <li class="tside-treeview treeview-menu-title">
+                            <a href="#">
+                                <img src="./images/table-icon.png" alt="智能策略"> 报表品台
+                                <span class="pull-right-container">
+                                    <i class="fa fa-caret-down pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="side-treeview-menu">
+                                <li class="treeview treeview-menu-list">
+                                    <a href="chart-list.html" class="pd14">
+                                        报表列表
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <p>首页</p>
+        <section class="content-header clearfix">
+            <h2>
+                <span>历史任务列表</span>
+                <div class="content-header-search fr">
+                    <input type="text" placeholder="关键词检索">
+                    <button></button>
+                </div>
+            </h2>
+        </section>
+        <!-- 历史任务 -->
+        <section class="content">
+            <div class="row model">
+                <div class="col-md-12">
+                    <ul class="table">
+                        <li class="clearfix">
+                            <div class="history-list">
+                                <div class="history-tog">
+                                    沉默用户召回沉默用户召回沉默用户召回18-09-01
+                                    <span>效果：提升20%</span>
+                                    目前状态:正在运行
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="create-work"><a href="new-work.html">创建任务</a></div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="history-list">
+                                <div class="history-tog">
+                                    千人千面营销千人千面营销千人千面营销18-09-01
+                                    <span>效果：提升20%</span>
+                                    目前状态:正在运行
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="create-work"><a href="new-work.html">创建任务</a></div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="history-list">
+                                <div class="history-tog">
+                                    贷款精准推荐贷款精准推荐贷款精准推荐18-09-01
+                                    <span>效果：提升20%</span>
+                                    目前状态:正在运行
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="create-work"><a href="new-work.html">创建任务</a></div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="history-list">
+                                <div class="history-tog">
+                                    流失挽回预警流失挽回预警流失挽回预警18-09-01
+                                    <span>效果：提升20%</span>
+                                    目前状态:正在运行
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="create-work"><a href="new-work.html">创建任务</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.zh-CN.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chart.js"></script>
+    <script>
+        $('.datepicker').datepicker({
+
+            autoclose:
+                true,
+
+            todayHighlight:
+                true,
+
+            language: "zh-CN",
+
+            format: "yyyy-mm-dd"
+
+        });
+
+
+    </script>
+</body>
+
+</html>
